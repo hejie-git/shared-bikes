@@ -1,0 +1,74 @@
+{
+  "error":0,
+  "status":"success",
+  "date":"2020-03-12",
+  "results":[
+    {
+      "currentCity":"foshan",
+      "pm25":"64",
+      "index":[
+        {
+          "des":"建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。",
+          "tipt":"穿衣指数",
+          "title":"穿衣",
+          "zs":"较舒适"
+        },
+        {
+          "des":"较不宜洗车，路面少量积水，如果执意擦洗汽车，要做好溅上泥水的心理准备。",
+          "tipt":"洗车指数",
+          "title":"洗车",
+          "zs":"较不宜"
+        },
+        {
+          "des":"天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。",
+          "tipt":"感冒指数",
+          "title":"感冒",
+          "zs":"较易发"
+        },
+        {
+          "des":"天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。",
+          "tipt":"运动指数",
+          "title":"运动",
+          "zs":"适宜"
+        },
+        {
+          "des":"属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。",
+          "tipt":"紫外线强度指数",
+          "title":"紫外线强度",
+          "zs":"最弱"
+        }],
+      "weather_data":[
+        {
+          "date":"周四 03月12日 (实时：18℃)",
+          "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/yin.png",
+          "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/yin.png",
+          "weather":"阴",
+          "wind":"无持续风向微风",
+          "temperature":"23 ~ 18℃"
+        },
+        {
+          "date":"周五",
+          "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/xiaoyu.png",
+          "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/zhongyu.png",
+          "weather":"小雨转中雨",
+          "wind":"北风3-4级",
+          "temperature":"25 ~ 17℃"
+        },
+        {
+          "date":"周六",
+          "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/xiaoyu.png",
+          "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/duoyun.png",
+          "weather":"小雨转多云",
+          "wind":"北风3-4级",
+          "temperature":"23 ~ 14℃"
+        },
+        {
+          "date":"周日",
+          "dayPictureUrl":"http://api.map.baidu.com/images/weather/day/qing.png",
+          "nightPictureUrl":"http://api.map.baidu.com/images/weather/night/duoyun.png",
+          "weather":"晴转多云","wind":"无持续风向微风","temperature":"23 ~ 16℃"
+        }
+      ]
+    }
+  ]
+}
