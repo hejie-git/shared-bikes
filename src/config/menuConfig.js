@@ -18,6 +18,26 @@ const menuList = [
       {
         title:"Loading",
         key:"/admin/ui/loading",
+      },
+      {
+        title:"通知提醒",
+        key:"/admin/ui/notification",
+      },
+      {
+        title:"全局Message",
+        key:"/admin/ui/message",
+      },
+      {
+        title:"Table页签",
+        key:"/admin/ui/pagelabel",
+      },
+      {
+        title:"图片画廊",
+        key:"/admin/ui/gallery",
+      },
+      {
+        title:"轮播图",
+        key:"/admin/ui/broadcastmap",
       }
     ]
   },

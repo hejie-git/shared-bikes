@@ -1,10 +1,12 @@
 import React,{Component} from "react";
 import {Col, Row} from "antd";
 import Util from "../../utils/utils"
+import menuList from "../../config/menuConfig";
+import {withRouter} from "react-router-dom"
 import axios from "../../axios"
 import "./index.less"
 
-class Header extends Component{
+export default @withRouter class Header extends Component{
   constructor(props) {
     super(props);
     this.state={
@@ -17,9 +19,19 @@ class Header extends Component{
     setInterval(()=>{
       let sysTime = Util.formateDate("YYYY-mm-dd HH:MM:SS",new Date());
       this.setState({sysTime})
-    },1000)
+    },1000);
 
     this.getWeatherAPIData();
+
+  }
+
+  getTitle(){
+    return menuList.map((item) => {
+      if (item.key.endsWith(this.props.location.pathname)){
+        return item.title
+      }
+      return null
+    })
   }
 
   //百度天气API
@@ -49,7 +61,7 @@ class Header extends Component{
           </Col>
         </Row>
         <Row className={'breadcrumb'}>
-          <Col span={'4'} className={'breadcrumb-title'}>首页</Col>
+          <Col span={'4'} className={'breadcrumb-title'}>{this.getTitle()}</Col>
           <Col span={'20'} className={'weather'}>
             <span className={'data'}>{this.state.sysTime}</span>
             <span className={'weather-detail'}>
@@ -62,5 +74,3 @@ class Header extends Component{
     )
   }
 }
-
-export default Header
