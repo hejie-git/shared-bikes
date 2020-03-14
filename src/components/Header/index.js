@@ -35,7 +35,7 @@ export default @withRouter class Header extends Component{
   }
 
   //百度天气API
-  //http://api.map.baidu.com/telematics/v3/weather?location=beijing&output=json&ak=3p49MVra6urFRGOT9s8UBWr2
+  //http://api.map.baidu.com/telematics/v3/weather?location=tianjin&output=json&ak=wTUF45irelbZlRS4vKs58v3cH27wuhzW
   getWeatherAPIData(){
     axios.jsonp({
       url:"http://api.map.baidu.com/telematics/v3/weather?location="+encodeURIComponent(this.state.city)+"&output=json&ak=wTUF45irelbZlRS4vKs58v3cH27wuhzW"
@@ -44,7 +44,8 @@ export default @withRouter class Header extends Component{
         let data = res.results[0].weather_data[0];
         this.setState({
           dayPictureUrl:data.dayPictureUrl,
-          weather:data.weather
+          weather:data.weather,
+          temperature:data.temperature
         })
       }
     })
@@ -68,6 +69,7 @@ export default @withRouter class Header extends Component{
               <img className={'PictureUrl'} src={this.state.dayPictureUrl} alt={''}/>
             </span>
             <span>{this.state.weather}</span>
+            <span>{this.state.temperature}</span>
           </Col>
         </Row>
       </div>
