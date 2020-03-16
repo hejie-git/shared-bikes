@@ -1,9 +1,19 @@
-.buttons, .modals{
+.buttons, .modals, .loading, .notification, .loading, .pagelabel, .broadcastmap{
   width: 100%;
   .btn{
     button{
       margin-right: 15px;
     }
+    .load{
+      margin-bottom: 15px;
+    }
+    .size{
+      margin-right: 15px;
+    }
+  }
+  .ant-spin-nested-loading{
+    width: 20%;
+    margin-bottom: 15px;
   }
 }
 .vertical-center-modal{
@@ -23,3 +33,21 @@
     top: 0;
     text-align: left;
   }
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 240px;
+  line-height: 240px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.slide-wrap .ant-carousel .slick-slide{
+  height: 920px;
+  img{
+    height: 920px;
+  }
+}

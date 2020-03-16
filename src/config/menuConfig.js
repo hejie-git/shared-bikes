@@ -43,7 +43,17 @@ const menuList = [
   },
   {
     title:'表单',
-    key:'/admin/form'
+    key:'/admin/form',
+    children:[
+      {
+        title:"登录",
+        key:"/admin/form/login"
+      },
+      {
+        title:"注册",
+        key:"/admin/form/reg"
+      }
+    ]
   },
   {
     title:'表格',
