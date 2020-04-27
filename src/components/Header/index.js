@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {Col, Row} from "antd";
 import Util from "../../utils/utils"
-import menuList from "../../config/menuConfig";
+import  menuList from "../../config/menuConfig";
 import {withRouter} from "react-router-dom"
 import axios from "../../axios"
 import "./index.less"
@@ -57,7 +57,6 @@ export default @withRouter class Header extends Component{
         <Row className={'header-top'}>
           <Col span={'24'}>
             <span>欢迎，xxx</span>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#">退出</a>
           </Col>
         </Row>

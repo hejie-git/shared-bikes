@@ -90,7 +90,7 @@ class Reg extends Component{
     return (
       <div className={'reg'}>
         <Card title={'注册表单'}>
-          <Form {...layout} onFinish={this.onFinish} initialValues={{sex:0,hobby:['0','1'],marriage:false,agreement:false}}>
+          <Form {...layout} onFinish={this.onFinish} initialValues={{sex:0,hobby:['0','1'],marriage:false,agreement:false,currentStatu:"study"}}>
             <Form.Item
               label={'用户名'}
               name={'username'}
@@ -153,7 +153,7 @@ class Reg extends Component{
               label={'当前状态'}
               name={'currentStatu'}
             >
-              <Select defaultValue="saltedFish" style={{ width: 120 }}>
+              <Select style={{ width: 240 }}>
                 <Option value="saltedFish">有梦想的咸鱼</Option>
                 <Option value="study">努力学习中</Option>
                 <Option value="success">功成名就</Option>

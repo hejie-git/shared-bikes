@@ -12,13 +12,14 @@ import Pagelabel from "./pages/ui/pagelabel";
 import Broadcastmap from "./pages/ui/broadcastmap";
 import Login from "./pages/form/login";
 import Reg from "./pages/form/reg";
-import { HashRouter, Route, Switch} from "react-router-dom";
+import BasicTable from "./pages/table/basicTable";
+import { HashRouter, Route, Switch, Redirect} from "react-router-dom";
 
 const IRouter = () =>{
   return (
     <HashRouter>
+      <Route exact path={'/'} render={()=>(<Redirect to={'/admin/home'}/>)}/>
       <App>
-        {/*<Route exact path="/" component={Admin}/>*/}
         <Route path="/admin" render={() =>
           <Admin>
             <Switch>
@@ -32,6 +33,7 @@ const IRouter = () =>{
               <Route path="/admin/ui/broadcastmap" component={Broadcastmap}/>
               <Route path="/admin/form/login" component={Login}/>
               <Route path="/admin/form/reg" component={Reg}/>
+              <Route path="/admin/table/basictable" component={BasicTable}/>
               <Route component={NoMatch}/>
             </Switch>
           </Admin>

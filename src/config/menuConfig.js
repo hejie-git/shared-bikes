@@ -57,7 +57,13 @@ const menuList = [
   },
   {
     title:'表格',
-    key:'/admin/table'
+    key:'/admin/table',
+    children:[
+      {
+        title:'通用表格',
+        key:'/admin/table/basictable'
+      }
+    ]
   },
   {
     title:'富文本',

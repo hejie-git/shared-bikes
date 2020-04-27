@@ -6,7 +6,7 @@ class Home extends Component{
   render() {
     return (
       <div className={'home'}>
-        欢迎使用共享单车
+        <img src='./宝庆年.jpg' alt={''} style={{width:840,height:525}}/>
       </div>)
   }
 
