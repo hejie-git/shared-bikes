@@ -38,7 +38,7 @@ class NavLeft extends Component{
       <div>
         <div className={'logo'}>
           <img className={'logo-img'} src="/assets/logo.svg" alt={''}/>
-          <h1 className={'logo-text'}>单车管理平台</h1>
+          <h1 className={'logo-text'}>绩效考核平台</h1>
         </div>
         <Menu theme={'dark'} mode="vertical">
           {this.state.menuTreeNode}
